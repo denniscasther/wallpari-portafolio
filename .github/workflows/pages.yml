@@ -25,7 +25,7 @@ jobs:
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v5
         with:
-          path: dist
+          path: dist/opcion-1
       - name: Publicar
         id: deployment
         uses: actions/deploy-pages@v4

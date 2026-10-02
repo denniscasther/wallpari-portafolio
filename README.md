@@ -1,11 +1,7 @@
 # Portafolio Wallpari
 
 Catálogo estático y escalable de productos, plataformas y proyectos de Wallpari. El sitio
-publicado alojará dos presentaciones comparables bajo el mismo dominio:
-
-- `/` — portada para elegir estilo.
-- `/opcion-1/` — tarjetas tecnológicas inmersivas.
-- `/opcion-2/` — archivo técnico editorial.
+publicado usa la opción 1: una experiencia de tarjetas tecnológicas inmersivas.
 
 ## Desarrollo local
 
@@ -23,9 +19,9 @@ directamente como archivo: el catálogo carga `data/projects.json` mediante `fet
 
 El catálogo y los filtros se generan automáticamente desde ese archivo.
 
-El despliegue de GitHub Pages usa `dist/` como artefacto y el dominio previsto es
-`portafolio.wallpari.pe`. La opción 1 se mantiene en esta carpeta; el proyecto editable
-de la opción 2 está en `../wallpari-portafolio-opcion-2/`.
+El despliegue de GitHub Pages usa `dist/opcion-1/` como artefacto y el dominio previsto es
+`portafolio.wallpari.pe`. La alternativa no publicada se conserva en
+`../wallpari-portafolio-opcion-2/`.
 
 ## Estado para retomar
 
