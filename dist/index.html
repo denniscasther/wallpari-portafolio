@@ -3,97 +3,24 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Sistemas, aplicaciones, automatizaciones y productos digitales desarrollados por Wallpari.">
-  <meta name="theme-color" content="#07111f">
-  <title>Portafolio · Wallpari Tech</title>
+  <meta name="description" content="Compara dos propuestas visuales para el portafolio tecnológico de Wallpari.">
+  <meta name="theme-color" content="#050d1c">
+  <title>Portafolio Wallpari · Elige una propuesta</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="stylesheet" href="assets/selector.css">
 </head>
 <body>
-  <a class="skip-link" href="#catalogo">Ir al catálogo</a>
-  <header class="site-header">
-    <a class="brand" href="https://wallpari.pe" aria-label="Wallpari Tech">
-      <img src="assets/img/logo-wallpari-tech.svg" alt="Wallpari Tech">
-    </a>
-    <nav aria-label="Navegación principal">
-      <a href="#catalogo">Proyectos</a>
-      <a href="#metodo">Cómo los organizamos</a>
-      <a class="nav-cta" href="#contacto">Cuéntanos tu idea</a>
-    </nav>
-  </header>
-
+  <header><a href="https://wallpari.pe"><img src="opcion-1/assets/img/logo-wallpari-tech.svg" alt="Wallpari Tech"></a><span>Archivo de proyectos · 2026</span></header>
   <main>
-    <section class="intro" aria-labelledby="page-title">
-      <div class="intro-copy">
-        <p class="overline">Portafolio tecnológico</p>
-        <h1 id="page-title">Soluciones construidas para <span>problemas reales.</span></h1>
-        <p class="lead">Sistemas, aplicaciones, automatizaciones, agentes de IA y productos conectados desarrollados en distintos lenguajes y para diferentes rubros.</p>
-      </div>
-      <div class="intro-stats" aria-label="Resumen del portafolio">
-        <div><strong id="project-count">—</strong><span>proyectos documentados</span></div>
-        <div><strong id="sector-count">—</strong><span>rubros representados</span></div>
-        <div><strong id="tech-count">—</strong><span>tecnologías utilizadas</span></div>
-      </div>
+    <section class="intro"><p class="eyebrow">Dos maneras de explorar el trabajo de Wallpari</p><h1>Elige cómo quieres <span>recorrerlo.</span></h1><p>El mismo catálogo de sistemas, aplicaciones y soluciones, presentado en dos estilos visuales.</p></section>
+    <section class="choices" aria-label="Propuestas de portafolio">
+      <article class="choice choice-one"><div class="preview"><img src="opcion-1/assets/img/projects/coach-idiomas.png" alt="Vista previa del estilo tecnológico oscuro"><span>01 · Interfaz tecnológica</span></div><div class="choice-copy"><p>Dinámica · inmersiva · visual</p><h2>Opción 1</h2><p>Tarjetas amplias, colores de acento y capturas al frente. Pensada para causar impacto y guiar al visitante a cada producto.</p><a href="opcion-1/">Explorar esta propuesta <span>↗</span></a></div></article>
+      <article class="choice choice-two"><div class="preview"><img src="opcion-2/assets/img/projects/coach-idiomas.png" alt="Vista previa del archivo técnico azul noche"><span>02 · Archivo técnico</span></div><div class="choice-copy"><p>Editorial · ordenada · densa</p><h2>Opción 2</h2><p>Un archivo numerado con rubro, formato y tecnologías a simple vista. Pensada para comparar un catálogo amplio.</p><a href="opcion-2/">Explorar esta propuesta <span>↗</span></a></div></article>
     </section>
-
-    <section class="catalog" id="catalogo" aria-labelledby="catalog-title">
-      <div class="catalog-heading">
-        <div>
-          <p class="overline">Explora el trabajo</p>
-          <h2 id="catalog-title">Catálogo de proyectos</h2>
-        </div>
-        <p id="results-label" aria-live="polite">Cargando proyectos…</p>
-      </div>
-
-      <div class="controls" aria-label="Filtros del catálogo">
-        <label class="search-box">
-          <span class="visually-hidden">Buscar proyectos</span>
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m21 21-4.4-4.4m2.4-5.1A7.5 7.5 0 1 1 4 11.5a7.5 7.5 0 0 1 15 0Z"/></svg>
-          <input id="search" type="search" placeholder="Busca por sistema, rubro o tecnología" autocomplete="off">
-        </label>
-        <select id="sector-filter" aria-label="Filtrar por rubro"><option value="">Todos los rubros</option></select>
-        <select id="type-filter" aria-label="Filtrar por tipo"><option value="">Todos los tipos</option></select>
-        <button class="clear-button" id="clear-filters" type="button" hidden>Limpiar</button>
-      </div>
-
-      <div class="featured-strip" id="featured-strip"></div>
-      <div class="project-grid" id="project-grid"></div>
-      <div class="empty-state" id="empty-state" hidden>
-        <p class="overline">Sin coincidencias</p>
-        <h3>No encontramos un proyecto con esos filtros.</h3>
-        <button type="button" id="empty-clear">Ver todo el catálogo</button>
-      </div>
-    </section>
-
-    <section class="method" id="metodo">
-      <div>
-        <p class="overline">Un catálogo que puede crecer</p>
-        <h2>Cada proyecto cuenta una historia técnica distinta.</h2>
-      </div>
-      <div class="method-grid">
-        <article><span>01</span><h3>Problema</h3><p>Partimos de una necesidad operativa, comercial o social concreta.</p></article>
-        <article><span>02</span><h3>Solución</h3><p>Elegimos el lenguaje y la arquitectura por su ajuste al caso, no por costumbre.</p></article>
-        <article><span>03</span><h3>Evidencia</h3><p>Mostramos funciones, estado y enlaces verificables sin inventar métricas.</p></article>
-      </div>
-    </section>
-
-    <section class="contact" id="contacto">
-      <div>
-        <p class="overline">Construyamos el siguiente</p>
-        <h2>¿Tienes un proceso que todavía depende de hojas, mensajes o tareas manuales?</h2>
-      </div>
-      <a class="primary-button" href="https://wa.me/51923696270?text=Hola%20Wallpari%2C%20vi%20su%20portafolio%20y%20quiero%20conversar%20sobre%20un%20proyecto." target="_blank" rel="noopener">Conversar por WhatsApp <span>↗</span></a>
-    </section>
+    <p class="note">Ambas propuestas contienen los mismos proyectos y se adaptan a celular y computadora.</p>
   </main>
-
-  <footer>
-    <img src="assets/img/logo-wallpari-tech.svg" alt="Wallpari Tech">
-    <p>Productos digitales, automatización e inteligencia aplicada.</p>
-    <a href="https://wallpari.pe">wallpari.pe</a>
-  </footer>
-
-  <script src="assets/app.js" defer></script>
+  <footer><span>wallpari•tech</span><a href="https://wallpari.pe">Volver a Wallpari.pe ↗</a></footer>
 </body>
 </html>

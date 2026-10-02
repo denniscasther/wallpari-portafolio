@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Archivo de sistemas, aplicaciones y soluciones construidas por Wallpari.">
+  <meta name="theme-color" content="#050d1c">
+  <title>Archivo de proyectos · Wallpari Tech</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <a class="skip" href="#archivo">Ir al archivo</a>
+  <header>
+    <a class="logo" href="https://wallpari.pe"><img src="assets/img/logo-wallpari-tech.svg" alt="Wallpari Tech"></a>
+    <p>Archivo de proyectos <span id="edition">/ 2026</span></p>
+    <a class="header-link" href="https://wa.me/51923696270?text=Hola%20Wallpari%2C%20vi%20su%20archivo%20de%20proyectos." target="_blank" rel="noopener">Iniciar un proyecto ↗</a>
+  </header>
+
+  <main>
+    <section class="opening">
+      <div class="opening-title">
+        <p class="index-label">Índice 001—010</p>
+        <h1>Ideas convertidas en <em>sistemas útiles.</em></h1>
+      </div>
+      <div class="opening-note">
+        <p>Un archivo vivo de aplicaciones, plataformas, automatizaciones e inteligencia aplicada a distintos rubros.</p>
+        <div class="numbers"><span><strong id="total">—</strong> proyectos</span><span><strong id="sectors">—</strong> rubros</span><span><strong id="technologies">—</strong> tecnologías</span></div>
+      </div>
+    </section>
+
+    <section class="archive" id="archivo">
+      <aside>
+        <p class="aside-title">Explorar archivo</p>
+        <label class="search"><span>Buscar</span><input id="search" type="search" placeholder="Nombre o tecnología"></label>
+        <div class="filter-group"><span>Rubro</span><div id="sector-filters" class="filter-list"></div></div>
+        <button id="clear" type="button" hidden>Restablecer filtros</button>
+        <p class="aside-count" id="result-count" aria-live="polite">Cargando…</p>
+      </aside>
+      <div class="project-list" id="project-list"></div>
+      <div class="empty" id="empty" hidden><strong>No hay coincidencias.</strong><button type="button">Mostrar todo</button></div>
+    </section>
+
+    <section class="closing">
+      <p>¿Reconoces aquí un problema parecido al de tu organización?</p>
+      <a href="https://wa.me/51923696270?text=Hola%20Wallpari%2C%20quiero%20conversar%20sobre%20una%20soluci%C3%B3n%20digital." target="_blank" rel="noopener">Conversemos <span>↗</span></a>
+    </section>
+  </main>
+
+  <footer><span>wallpari•tech</span><p>Construcción digital con criterio.</p><a href="https://wallpari.pe">wallpari.pe</a></footer>
+  <script src="assets/app.js" defer></script>
+</body>
+</html>
